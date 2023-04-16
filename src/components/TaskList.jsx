@@ -1,5 +1,5 @@
 import React, { Component,useState } from 'react';
-
+import { TaskCard } from './TaskCard';
 
 export const TaskList=()=>{
 const [tasks,setTask]=useState([
@@ -16,11 +16,7 @@ function handleDel(id){
 			<ul>
 		<button onClick={()=> setShow(!show)}> toggle</button>
 		{show && tasks.map((task) =>(
-			<li key={task.id}>
-
-				<span>{task.name}</span>- <span>{task.id}</span>
-				<button className="del" onClick={()=>handleDel(task.id)}>delete </button> 
-			</li>
+	     <TaskCard task={task} handleDel={handleDel} />
 		))}
 		
 		</ul>	
