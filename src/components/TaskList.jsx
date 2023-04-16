@@ -16,7 +16,7 @@ function handleDel(id){
 			<ul>
 		<button onClick={()=> setShow(!show)}> toggle</button>
 		{show && tasks.map((task) =>(
-	     <TaskCard task={task} handleDel={handleDel} />
+	     <TaskCard task={task} handleDel={handleDel} key={task.id} />
 		))}
 		
 		</ul>	
