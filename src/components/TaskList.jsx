@@ -1,5 +1,6 @@
 import React, { Component,useState } from 'react';
 import { TaskCard } from './TaskCard';
+import { BoxCard } from './BoxCard';
 
 export const TaskList=()=>{
 const [tasks,setTask]=useState([
@@ -20,6 +21,7 @@ function handleDel(id){
 		))}
 		
 		</ul>	
+		<BoxCard/>
 		</>
 	)
 }
