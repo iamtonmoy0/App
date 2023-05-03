@@ -21,7 +21,7 @@ function handleDel(id){
 		))}
 		
 		</ul>	
-		<BoxCard/>
+	
 		</>
 	)
 }
