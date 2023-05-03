@@ -15,7 +15,7 @@ function handleDel(id){
 	return(
 		<>
 			<ul>
-		<button onClick={()=> setShow(!show)} className='showBtn'> {show ? "Hide" :"Show"} </button>
+		<button onClick={()=> setShow(!show)} className='showBtn'> {show ? "Hide" :"Show"} </button> <br />
 		{show && tasks.map((task) =>(
 	     <TaskCard task={task} handleDel={handleDel} key={task.id} />
 		))}
